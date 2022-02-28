@@ -22,14 +22,6 @@ class CreateSeosTable extends Migration
             $table->string('seo_image')->nullable();
             $table->string('site_name')->nullable();
         });
-        DB::table('seos')->insert(
-            array(
-                'meta_title' => 'test',
-                'meta_description' => 'test',
-                'canonical_link' => 'test',
-                'site_name' => 'test',
-            )
-        );
     }
 
     /**

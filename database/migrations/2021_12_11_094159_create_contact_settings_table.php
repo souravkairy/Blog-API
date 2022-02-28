@@ -22,16 +22,6 @@ class CreateContactSettingsTable extends Migration
             $table->string('mobile_number');
             $table->string('email');
         });
-        DB::table('contact_settings')->insert(
-            array(
-                'heading' => 'test',
-                'sub_heading' => 'test',
-                'address' => 'test',
-                'mobile_number' => 'test',
-                'email' => 'test',
-            )
-        );
-
     }
 
     /**

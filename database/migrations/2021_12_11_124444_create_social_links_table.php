@@ -22,13 +22,6 @@ class CreateSocialLinksTable extends Migration
             $table->string('youtube');
             $table->string('instagram');
         });
-        DB::table('social_links')->insert(
-            array(
-                'facebook' => '#',
-                'twitter' => '#',
-                'linkedin' => '#',
-            )
-        );
     }
 
     /**

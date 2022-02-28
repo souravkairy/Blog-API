@@ -23,15 +23,6 @@ class CreateHerosTable extends Migration
             $table->string('btn_link_one');
             $table->string('btn_link_two');
         });
-        DB::table('heros')->insert(
-            array(
-                'heading' => 'test',
-                'sub_heading' => 'test',
-                'text' => 'test',
-                'btn_link_one' => 'test',
-                'btn_link_two' => 'test',
-            )
-        );
     }
 
     /**

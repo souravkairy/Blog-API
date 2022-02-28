@@ -20,12 +20,6 @@ class CreateCtasTable extends Migration
             $table->string('sub_heading');
             $table->string('image')->nullable();
         });
-        DB::table('ctas')->insert(
-            array(
-                'heading' => 'test',
-                'sub_heading' => 'test',
-            )
-        );
     }
 
     /**
