@@ -23,7 +23,8 @@ class AuthController extends Controller
     {
         if (!Auth::attempt($request->only('email', 'password'))) {
             return response([
-                'message' => 'Invalid credentials!'
+                'message' => 'Invalid credentials!',
+                'token' => null
             ], Response::HTTP_UNAUTHORIZED);
         }
         $user = Auth::user();
@@ -33,6 +34,7 @@ class AuthController extends Controller
         $cookie = cookie('jwt', $token, 60); // 60 min
 
         return response([
+            'message' => 'Successfull',
             'token' => $token
         ])->withCookie($cookie);
     }
