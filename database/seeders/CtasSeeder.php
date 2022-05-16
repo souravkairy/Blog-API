@@ -17,7 +17,7 @@ class CtasSeeder extends Seeder
         DB::table('ctas')->insert([
             'heading' => 'A father enjoying the remarkable childhood of his son',
             'sub_heading' => 'Sub heading',
-            'image' => 'image/cta.jpg',
+            'image' => 'image/cta.jpeg',
         ]);
     }
 }
